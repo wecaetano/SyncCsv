@@ -4011,11 +4011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\teste\\SyncCsv\\SyncCsvOneDrive\\SyncCsvOneDrive.csproj",
+      "projectUniqueName": "D:\\Git\\SyncCsv\\SyncCsvOneDrive\\SyncCsvOneDrive.csproj",
       "projectName": "SyncCsvOneDrive",
-      "projectPath": "D:\\teste\\SyncCsv\\SyncCsvOneDrive\\SyncCsvOneDrive.csproj",
+      "projectPath": "D:\\Git\\SyncCsv\\SyncCsvOneDrive\\SyncCsvOneDrive.csproj",
       "packagesPath": "C:\\Users\\wecae\\.nuget\\packages\\",
-      "outputPath": "D:\\teste\\SyncCsv\\SyncCsvOneDrive\\obj\\",
+      "outputPath": "D:\\Git\\SyncCsv\\SyncCsvOneDrive\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wecae\\AppData\\Roaming\\NuGet\\NuGet.Config",
