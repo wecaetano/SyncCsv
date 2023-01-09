@@ -19,7 +19,6 @@ namespace DownloadFile
             string username = "powerbi";
             string password = "powerbi@2023";
             string localFolder = "C:\\Downloads";
-            string fileName = "projetos.csv";
 
             // Verifica se o arquivo JSON de configuração existe
             if (File.Exists(configFileName))
@@ -30,7 +29,6 @@ namespace DownloadFile
                 username = (string)config["username"];
                 password = (string)config["password"];
                 localFolder = (string)config["localFolder"];
-                fileName = (string)config["fileName"];
             }
             else
             {
@@ -40,8 +38,7 @@ namespace DownloadFile
                     ["fileUrl"] = fileUrl,
                     ["username"] = username,
                     ["password"] = password,
-                    ["localFolder"] = localFolder,
-                    ["filename"] = fileName
+                    ["localFolder"] = localFolder
                 };
                 File.WriteAllText(configFileName, config.ToString());
             }
@@ -60,10 +57,9 @@ namespace DownloadFile
                 stream.CopyTo(memoryStream);
                 byte[] fileBytes = memoryStream.ToArray();
 
-<<<<<<< HEAD
-=======
+                // Crie um nome de arquivo a partir da URL do arquivo
+                string fileName = new Uri(fileUrl).Segments[^1];
 
->>>>>>> bfb699fcf83ca8d337ba83f9e4c89dbc1380e4eb
                 // Crie um caminho de arquivo na pasta local
                 string filePath = Path.Combine(localFolder, fileName);
 

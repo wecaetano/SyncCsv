@@ -40,8 +40,7 @@ namespace DownloadFile
                     ["fileUrl"] = fileUrl,
                     ["username"] = username,
                     ["password"] = password,
-                    ["localFolder"] = localFolder,
-                    ["filename"] = fileName
+                    ["localFolder"] = localFolder
                 };
                 File.WriteAllText(configFileName, config.ToString());
             }
@@ -60,10 +59,7 @@ namespace DownloadFile
                 stream.CopyTo(memoryStream);
                 byte[] fileBytes = memoryStream.ToArray();
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bfb699fcf83ca8d337ba83f9e4c89dbc1380e4eb
                 // Crie um caminho de arquivo na pasta local
                 string filePath = Path.Combine(localFolder, fileName);
 
