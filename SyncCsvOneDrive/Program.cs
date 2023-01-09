@@ -18,7 +18,8 @@ namespace DownloadFile
             string fileUrl = "http://13.90.135.11:3000/projects/projetos-telecom/issues.csv?query_id=4";
             string username = "powerbi";
             string password = "powerbi@2023";
-            string localFolder = "C:\\Downloads";
+            string localFolder = "C:\Downloads";
+            string fileName = "projetos.csv";
 
             // Verifica se o arquivo JSON de configuração existe
             if (File.Exists(configFileName))
@@ -29,6 +30,7 @@ namespace DownloadFile
                 username = (string)config["username"];
                 password = (string)config["password"];
                 localFolder = (string)config["localFolder"];
+                fileName = (string)config["fileName"];
             }
             else
             {
@@ -38,7 +40,8 @@ namespace DownloadFile
                     ["fileUrl"] = fileUrl,
                     ["username"] = username,
                     ["password"] = password,
-                    ["localFolder"] = localFolder
+                    ["localFolder"] = localFolder,
+                    ["filename"] = fileName
                 };
                 File.WriteAllText(configFileName, config.ToString());
             }
@@ -61,7 +64,7 @@ namespace DownloadFile
                 string fileName = new Uri(fileUrl).Segments[^1];
 
                 // Crie um caminho de arquivo na pasta local
-                string filePath = Path.Combine(localFolder, fileName);
+                //string filePath = Path.Combine(localFolder, fileName); | Não precisa mais, criei uma variável com Nome do arquivo
 
                 // Verifica se a pasta local existe, caso contrário, cria a pasta
                 if (!Directory.Exists(localFolder))
