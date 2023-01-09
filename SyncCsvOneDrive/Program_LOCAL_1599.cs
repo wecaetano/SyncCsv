@@ -40,8 +40,7 @@ namespace DownloadFile
                     ["fileUrl"] = fileUrl,
                     ["username"] = username,
                     ["password"] = password,
-                    ["localFolder"] = localFolder,
-                    ["filename"] = fileName
+                    ["localFolder"] = localFolder
                 };
                 File.WriteAllText(configFileName, config.ToString());
             }
