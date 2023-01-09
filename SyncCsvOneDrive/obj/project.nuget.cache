@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V2TEtDtFiZehiIUviaQDlj2QoS/OiJNlh2l+9siWmM0rSkAO04DtTcmw0LU17g4KaGrrGPnL5CsRrbRUWpzzXA==",
+  "dgSpecHash": "kznjvmfaJav7FLjKZKXytFnIzOnSFsVH75F337FmoAy1ZxDJOfN6gBgsydydnqqHAdjQ17NytThk50VO/fWOuw==",
   "success": true,
-  "projectFilePath": "D:\\teste\\SyncCsv\\SyncCsvOneDrive\\SyncCsvOneDrive.csproj",
+  "projectFilePath": "D:\\Git\\SyncCsv\\SyncCsvOneDrive\\SyncCsvOneDrive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wecae\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\wecae\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
