@@ -1,2 +1,0 @@
-D:\teste\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\publish\win-x86\SyncCsvOneDrive.pdb
-D:\teste\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\publish\win-x86\SyncCsvOneDrive.exe
